@@ -87,6 +87,7 @@ button.spoiler{
 }
 
 #sidebar-wrapper {
+	box-sizing: padding-box;
 	padding-top: 10px;
 	border-right: 1px solid white;
     z-index: 1000;
@@ -101,6 +102,10 @@ button.spoiler{
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+#sidebar-wrapper::-webkit-scrollbar { 
+    display: none; 
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -133,6 +138,7 @@ button.spoiler{
 }
 
 .sidebar-nav li a {
+	outline: none;
     display: block;
     text-decoration: none;
     color: #999999;
@@ -187,7 +193,6 @@ button.spoiler{
 
 .sidebar-nav > .sidebar-online a:hover {
     color: #fff;
-    background: none;
 }
 
 .sidebar-nav > .sidebar-online{
@@ -216,6 +221,167 @@ button.spoiler{
 }
 .sidebar-rewards > img{
 	width: 50px;
+}
+/*-------------------------------------------*/
+
+
+/* Sidebar-settings */
+.sidebar-settings{
+	color: #999999;
+}
+
+/* Settings-user */
+.sidebar-settings > .settings-user{
+	text-align: center;
+}
+
+.sidebar-settings > .settings-user a{
+	font-size: 20px;
+	color: #999999;
+	text-decoration: none;
+	text-align: center;
+}
+
+.settings-user > .settings-useravatar > .avatar-bubble a{
+	font-size: 14px;
+}
+
+.sidebar-settings > .settings-user a:hover{
+	color: #fff;
+}
+
+.settings-useravatar{
+	width: 98px;
+	height: 98px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #999;
+	display: inline-block;
+
+}
+
+.settings-useravarar > #user-avatar{
+	text-align: center;
+	width: inherit;
+	height: inherit;
+}
+
+.settings-useravatar:hover .avatar-bubble{
+	top: 0;
+}
+
+.avatar-bubble{
+	background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    padding: 0px 0;
+    color: #ffffff;
+    width: inherit;
+    padding: 5px 10px;
+    top: -40px;
+    transition: 0.3s ease;
+    text-transform: uppercase
+}
+
+.settings-user > a > i.fa-times{
+	margin-right: 10px;
+	margin-left: -42px;
+	margin-top: -6px;
+	float: right;
+}
+/*-------------------------------------------*/
+
+/* Settings status */
+.settings-status > .status-content{
+	height: 120px;
+	overflow: hidden;
+	border: 7px solid rgb(127,127,127);
+	margin: 0 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.settings-status > .status-label{
+	font-size: 16px;
+	margin-left: 75px;
+	text-align: center;
+	background: rgb(127,127,127);
+	color: white;
+	padding: 5px 5px;
+}
+
+.status-label > a > i.fa-times{
+	color: #b60000;
+}
+
+.status-label > a > i.fa-pencil{
+	color: yellow;
+}
+
+.status-label > a > i.fa-check{
+	color: green;
+}
+
+#status-confirm{
+	display: none;
+}
+
+#status-input{
+	display: none;
+	width: 215px;
+	height: 106px;
+	resize: none;
+	outline: none;
+	color: black;
+}
+
+#status-text{
+	word-break: break-all;
+}
+/*-------------------------------------------*/
+
+/* Main part | white/black-lists */
+.settings-main{
+	margin-top: 10px;
+}
+
+.sidebar-settings > .settings-main > ul{
+	font-size: 15px;
+	list-style-type: none;
+	padding: 10px;
+}
+
+.sidebar-settings > .settings-main > ul > li{
+	margin: 10px 0;
+}
+
+.sidebar-settings > .settings-main > ul > li a{
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	padding: 10px 0;
+	text-align: center;
+	outline: none;
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-settings > .settings-main > ul > li a:hover{
+	background: rgba(255,255,255,0.2);
+	color: #fff;
+}
+/*-------------------------------------------*/
+
+/* Main part | sliders */
+.sidebar-settings > .settings-main > ul > li > .switches div.toggle{
+	float: right;
+}
+
+.settings-main .switches{
+	margin-top: 30px;
+}
+
+.settings-main .switches > .row{
+	margin: 10px -15px;
 }
 /*-------------------------------------------*/
 

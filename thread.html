@@ -8,13 +8,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap Template</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap/css/style.css">
     <link rel="stylesheet" href="bootstrap/css/font-awesome.css">
 
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-	
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,203 +26,309 @@
 
 <body>
 
-<div id="wrapper">
+	<div id="wrapper">
 
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">                    
-                    <img src="bootstrap/static/logo.png" alt="">
-                </a>
-            </li>
-            <hr>
-            <li class="sidebar-user">
-                <a href="#">                	
-                <i class="glyphicon glyphicon-user" style="font-size: 500%;"></i>
-                	<br>
-                	USER              	
-                </a>
-            </li>
-            <li>
-            	<div class="row">
-            		<div class="col-md-6"><a href="#" class="settings">Настройки</a></div>
-            		<div class="col-md-5"><a href="#">Выход</a></div>
-            		<div class="col-md-1"></div>
-            	</div>
-            </li>
-            <hr>
-            <li>
-                <div class="row sidebar-online">
-                	<div class="col-md-6"><a href="">Посетители онлайн:<br><span class="online-number">2</span></a></div>
-                	<div class="col-md-6"><a href="">Админы онлайн:<br><span class="online-number">2</span></a></div>
-                </div>
-            </li>
-            <hr> 
-            <li>
-            	
-            	<div class="row sidebar-rewards">
-            		<img src="bootstrap/static/z.png">
-					<img src="bootstrap/static/z.png">
-					<img src="bootstrap/static/z.png">
-					<img src="bootstrap/static/z.png">
-					<img src="bootstrap/static/z.png">
-					<img src="bootstrap/static/z.png">
-            	</div>
-            </li>    
-        </ul>
+	    <!-- Sidebar wrapper -->
+	    <div id="sidebar-wrapper">
 
-        <div class="sidebar-settings">
-        	<a href="#" class="settings"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-        	<center>
-        		
-    			<a href="#">                	
-                <i class="glyphicon glyphicon-user" style="color: rgb(222,222,222);font-size: 1000%;"></i>
-                	<br>
-                	<h1>USER</h1>             	
-                </a>
-    		
-        	</center>
-        </div>
-    </div>
-    <!-- /#sidebar -->
+	    	<!-- Main sidebar content -->
+	        <ul class="sidebar-nav">
 
-    <!-- Page Content Wrapper -->
-	<div id="page-content-wrapper">
-	
-	<!-- Navigation Bar -->
-	    <div class="container-fluid navbar-wrapper">
-		    <div class="row">       
-		        <div class="navbar navbar-inverse navbar-static-top">
-		            <div class="container-fluid">
-		                <div class="navbar-header">						
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-			                        <span class="icon-bar"></span>
-			                        <span class="icon-bar"></span>
-			                        <span class="icon-bar"></span>
-			                        <span class="icon-bar"></span>
-			                </button>
-		                </div>
+	        	<!-- Section for logo -->
+	            <li class="sidebar-brand">
+	                <a href="#">                    
+	                    <img src="bootstrap/static/logo.png" alt="">
+	                </a>
+	            </li>
+	            <hr>
 
-		                <div class="collapse navbar-collapse" id="responsive-menu">
-		                    <ul class="nav navbar-nav">
-		                        <li><a href="index.html">TENET-TEAM</a></li>
-		                        <li class="dropdown">
-		                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Форум<b class="caret"></b></a>
-		                        	<ul class="dropdown-menu">
-		                        		<li><a href="#">Перейти на форум</a></li>
-		                        		<li class="divider"></li>
-		                        		<li><a href="#">Правила</a></li>
-		                        		<li><a href="#">Последние темы</a></li>
-		                        		<li><a href="#">Популярные темы</a></li>
-		                        		<li><a href="#">Пользователи</a></li>
-		                        	</ul>
-		                        </li>
-		                        <li><a href="#">Проекты</a></li>
-		                        <li><a href="https://new.vk.com/25yearslatertenetteam" target="_blank">Наш VK</a></li>
-		                    </ul>
-		                </div>
-		            </div>
-		        </div>
-		    </div>  
-		</div>  
-		<!-- END Navigation Bar -->
-		
-		<!-- Content -->
-	    <div class="container-fluid">
-	        <div class="row">
-	            <div class="col-lg-12">
-	            	<!-- Main block on forum -->
-	                <div class="forumChapter threadMain">
+	            <!-- Section for user -->
+	            <li class="sidebar-user">
+	                <a href="#">                	
+	                <img src="bootstrap/static/815.jpg">
+	                	<br>
+	                	USER              	
+	                </a>
+	            </li>
 
-	                	<!-- Header of main block-->
-	                	<div class="forumHeaderBlock">                        		
-                    		<a href="#">
-                    			Человек - нелюдь
-                    		</a>                        		
-	                	</div>
-
-	                	<!-- Content of the main block -->                	
-	                	
-
-						
-	                	<!-- Main container for threads info -->
-						<div class="threadMessageContent container-fluid">
-							<div class="threadUserInfo">
-								<img src="bootstrap/static/815.jpg">
-								<a href="#"><h3>USER</h3></a>
-								<hr>
-								<ul>
-									<li>Сообщения: 5</li>
-									<li>Баллы: 7</li>
-								</ul>
-								<div class="threadUserRewards">
-									<img src="bootstrap/static/z.png">
-									<img src="bootstrap/static/z.png">
-									<img src="bootstrap/static/z.png">
-									<img src="bootstrap/static/z.png">
-									<img src="bootstrap/static/z.png">
-									<img src="bootstrap/static/z.png">
-
-								</div>
-
-
-							</div>
-							<div class="threadMessageText">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed incidunt unde quaerat, nihil modi nisi debitis! Minus quas ab, enim dolorem suscipit nulla tenetur. Dicta voluptate velit veniam ratione eius.
-							</div>
-
-							<div class="threadMessageSignature">
-								<button class="spoiler folded">Spoiler</button>
-								<div class="spoiler-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur modi, dolorum ducimus exercitationem, nisi eos recusandae aliquam omnis mollitia qui alias vel eaque aliquid voluptate quam impedit rerum ipsam tenetur.
-								<br>
-								<img src="bootstrap/static/z.png" class="img-responsive" style="width: 500px;">
-								</div>
-							</div>
-
-
-
-							<div class="threadMessageMeta">
-								22:43 15.07.2016
-							</div>
-
-							
-						</div>
-
-
-
-
-
-							
-
-
-							
-							
-
-
-	                	</div>                    
+				<!-- Section for buttons: Settings | Exit -->
+	            <li>
+	            	<div class="row">
+	            		<div class="col-md-6"><a href="#" class="settings">Настройки</a></div>
+	            		<div class="col-md-5"><a href="#">Выход</a></div>
+	            		<div class="col-md-1"></div>
 	            	</div>
-	        	</div>
-	    	</div>
-		</div>
-	    
-	<!-- /#page-content-wrapper -->
-	</div>
+	            </li>
+	            <hr>
 
-<!-- /#wrapper -->
-</div>
+	            <!-- Section for monitor online users -->
+	            <li>
+	                <div class="row sidebar-online">
+	                	<div class="col-md-6"><a href="">Посетители онлайн:<br><span class="online-number">2</span></a></div>
+	                	<div class="col-md-6"><a href="">Админы онлайн:<br><span class="online-number">2</span></a></div>
+	                </div>
+	            </li>
+	            <hr> 
+
+	            <!-- Section for rewards | medals -->
+	            <li>            	
+	            	<div class="row sidebar-rewards">
+	            		<img src="bootstrap/static/z.png">
+						<img src="bootstrap/static/z.png">
+						<img src="bootstrap/static/z.png">
+						<img src="bootstrap/static/z.png">
+						<img src="bootstrap/static/z.png">
+						<img src="bootstrap/static/z.png">
+	            	</div>
+	            </li>
+	        </ul>
+			
+			<!-- Main sidebar settings -->
+	        <div class="sidebar-settings">
+	        	
+	        	<!-- Section for user -->
+	        	<div class="settings-user">
+
+	        		<!-- Close button -->
+		        	<a href="#" class="settings">
+		        		<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+		        	</a>
+					
+					<!-- Useravatar and bubble slider -->
+	        		<div class="settings-useravatar">
+	        			<div class="avatar-bubble">
+	        				<a href="#"><i class="fa fa-camera"></i></a>
+	        			</div>
+	        			<img src="bootstrap/static/815.jpg" id="user-avatar">        			
+	        		</div>
+	        		
+	        		<!-- UserNick -->
+	        		<a href="#">                
+	                	<p>USER</p>                
+	                </a>
+	        	</div>
+	        	<hr>
+				
+				<!-- Section for status -->
+	        	<div class="settings-status">
+
+	        		<!-- Status label with icons -->
+	        		<span class="status-label">
+	        			<a href="#" id="status-edit"><i class="fa fa-pencil"></i></a>
+	        			<a href="#" id="status-confirm"><i class="fa fa-check"></i></a>
+	        			Статус
+	        			<a href="#" id="status-delete"><i class="fa fa-times"></i></a>
+	        		</span>
+
+					<!-- Status main content | text or textarea -->
+	        		<div class="status-content">
+	        			<div id="status-text"></div>
+	        			<textarea maxlength="100" placeholder="Введите новый статус" id="status-input"></textarea>
+	        		</div>
+	        	</div>
+				
+				<!-- Main settings content | w,b-lists, sliders -->
+	        	<div class="settings-main">
+	        		<ul>
+
+	        			<!-- W,B-lists -->
+	        			<li>
+	        				<div class="row">
+	        					<div class="col-md-6">
+	        						<a href="#">
+	        							Настроить whitelist
+	        						</a>
+	        					</div>
+	        					<div class="col-md-6">
+	        						<a href="#">
+	        							Настроить blacklist
+	        						</a>
+	        					</div>
+	        				</div>
+	        			</li>
+	        		
+	        			<!-- Settings switches -->
+	        			<li>
+		        			<div class="switches">
+			        			<div class="row">
+				        			<div class="col-md-12">
+				        				E-mail уведомления:
+				        				<input type="checkbox" data-on="Вкл." data-off="Выкл." checked data-toggle="toggle" data-size="mini" data-width="50">
+				        			</div>
+			        			</div>
+			        			<div class="row">
+				        			<div class="col-md-12">
+				        				Коментарии к профилю:
+				        				<input type="checkbox" data-on="Откр." data-off="Закр." checked data-toggle="toggle" data-size="mini" data-width="50">
+				        			</div>
+			        			</div>
+
+			        			<div class="row">
+				        			<div class="col-md-12">
+				        				E-mail уведомления:
+				        				<input type="checkbox" data-on="Вкл." data-off="Выкл." checked data-toggle="toggle" data-size="mini" data-width="50">
+				        			</div>
+			        			</div>
+			        			<div class="row">
+				        			<div class="col-md-12">
+				        				Коментарии к профилю:
+				        				<input type="checkbox" data-on="Откр." data-off="Закр." checked data-toggle="toggle" data-size="mini" data-width="50">
+				        			</div>
+			        			</div>
+		        			</div>
+	        			</li>        			
+	        		</ul>        		
+	        	</div>
+	        </div>
+	    </div>
+	    <!-- /#sidebar wrapper -->
+
+	    <!-- Page Content Wrapper -->
+		<div id="page-content-wrapper">
+		
+		<!-- Navigation Bar -->
+		    <div class="container-fluid navbar-wrapper">
+			    <div class="row">       
+			        <div class="navbar navbar-inverse navbar-static-top">
+			            <div class="container-fluid">
+			                <div class="navbar-header">						
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+				                        <span class="icon-bar"></span>
+				                        <span class="icon-bar"></span>
+				                        <span class="icon-bar"></span>
+				                        <span class="icon-bar"></span>
+				                </button>
+			                </div>
+
+			                <div class="collapse navbar-collapse" id="responsive-menu">
+			                    <ul class="nav navbar-nav">
+			                        <li><a href="index.html">TENET-TEAM</a></li>
+			                        <li class="dropdown">
+			                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Форум<b class="caret"></b></a>
+			                        	<ul class="dropdown-menu">
+			                        		<li><a href="#">Перейти на форум</a></li>
+			                        		<li class="divider"></li>
+			                        		<li><a href="#">Правила</a></li>
+			                        		<li><a href="#">Последние темы</a></li>
+			                        		<li><a href="#">Популярные темы</a></li>
+			                        		<li><a href="#">Пользователи</a></li>
+			                        	</ul>
+			                        </li>
+			                        <li><a href="#">Проекты</a></li>
+			                        <li><a href="https://new.vk.com/25yearslatertenetteam" target="_blank">Наш VK</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			    </div>  
+			</div>  
+			<!-- END Navigation Bar -->
+			
+			<!-- Content -->
+		    <div class="container-fluid">
+		        <div class="row">
+		            <div class="col-lg-12">
+		            	<!-- Main block on forum -->
+		                <div class="forumChapter threadMain">
+
+			                	<!-- Header of main block-->
+			                	<div class="forumHeaderBlock">                        		
+		                    		<a href="#">
+		                    			Человек - нелюдь
+		                    		</a>                        		
+			                	</div>
+
+			                	<!-- Content of the main block -->                	
+			                	
+
+								
+			                	<!-- Main container for threads -->
+								<div class="threadMessageContent container-fluid">
+									<!-- Thread author info -->
+									<div class="threadUserInfo">
+										<img src="bootstrap/static/815.jpg">
+										<a href="#"><h3>USER</h3></a>
+										<hr>
+										<ul>
+											<li>Сообщения: 5</li>
+											<li>Баллы: 7</li>
+										</ul>
+										<div class="threadUserRewards">
+											<img src="bootstrap/static/z.png">
+											<img src="bootstrap/static/z.png">
+											<img src="bootstrap/static/z.png">
+											<img src="bootstrap/static/z.png">
+											<img src="bootstrap/static/z.png">
+											<img src="bootstrap/static/z.png">
+										</div>
+									</div>
+
+									<!-- Main thread text -->
+									<div class="threadMessageText">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed incidunt unde quaerat, nihil modi nisi debitis! Minus quas ab, enim dolorem suscipit nulla tenetur. Dicta voluptate velit veniam ratione eius.
+									</div>
+									
+									<!-- Thread signature -->
+									<div class="threadMessageSignature">
+										<button class="spoiler folded">Spoiler</button>
+										<div class="spoiler-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur modi, dolorum ducimus exercitationem, nisi eos recusandae aliquam omnis mollitia qui alias vel eaque aliquid voluptate quam impedit rerum ipsam tenetur.
+										<br>
+										<img src="bootstrap/static/z.png" class="img-responsive" style="width: 500px;">
+										</div>
+									</div>
+
+									<!-- Thread metadata -->
+									<div class="threadMessageMeta">
+										22:43 15.07.2016
+									</div>							
+								</div>
+		                	</div>                    
+		            	</div>
+		        	</div>
+		    	</div>
+			</div>
+
+		<!-- /#page-content-wrapper -->
+		</div>
+
+	<!-- /#wrapper -->
+	</div>
    
 
     
-    
-
+    <!-- Modal for status -->
+    <div class="modal fade" id="modal-1">
+    	<div class="modal-dialog modal-sm">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button class="close" type="button" data-dismiss="modal">
+    					<i class="fa fa-times"></i>
+    				</button>
+    				<h4 class="modal-title">Подтвердите действие</h4>    				
+    			</div>
+    			<div class="modal-body">
+    				<p>Вы действительно хотите удалить свой статус?</p>
+    			</div>
+    			<div class="modal-footer">
+    				<button id="btn-delete-btn" class="btn btn-success" type="button" style="float:left;">Удалить статус</button>
+    				<button class="btn btn-danger" type="button" data-dismiss="modal">Отменить</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.js"></script>
-
+    
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- Custom scripts -->
     <script src="bootstrap/js/scripts.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   </body>
 </html>
